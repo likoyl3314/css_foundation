@@ -64,7 +64,7 @@ body {
     position: fixed; /* Keeps the footer at the bottom of the viewport */
     bottom: 0;
     width: 100%;
-    height: 20px; /* Matches the height reserved in .overlay */
+    height: 5%; /* Matches the height reserved in .overlay */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,4 +75,38 @@ body {
     color: white;
     margin: 0;
     font-size: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Ensure the full image is visible on smaller screens */
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
 }
