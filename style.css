@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: url(images/sniper1.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: calc(100% - 5px); /* Leaves space for the footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    width: 90%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #006400;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #228B22;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: black;
+    text-align: center;
+    position: fixed; /* Keeps the footer at the bottom of the viewport */
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Matches the height reserved in .overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
+}
+
+.footer h5 {
+    color: white;
+    margin: 0;
+    font-size: 0.5rem;
+}
